@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar bg-dark text-light d-flex justify-content-center">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Left column containing the ui to text search and clickable searches-->
+                <div id="userInterface" class="bg-light col-3 d-flex">
+                    <div class="form-group w-100">
+                        <h5>Search For a City:</h5>
+                        <div class="p-0 col-10 input-group">
+                            <input id="citySearch" type="text" class="form-control" placeholder="Enter City Name"/>
+                            <div id="" class="input-group-append">
+                                <button class="btn btn-primary search-submit" type="button" id="search-submit"><i id="" class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="mt-4 list-group">
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side to display city specific data -->
+                <div class="col-9">
+                    <!-- the first card displays the current weather info for the selected city -->
+                    <div class="mt-3 card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4"><span id="currentCity" ></span> (<span id="currentDate" ></span>)<img id="currentIcon" src="" alt="Weather icon"></h3>
+                            <p class="card-text">Temperature: <span id="currentTemp" ></span> &#8457</p>
+                            <p class="card-text">Humidity: <span id="currentHumidity" ></span>%</p>
+                            <p class="card-text">Wind Speed: <span id="currentWindSpeed" ></span> MPH</p>
+                            <p class="card-text">UV Index: <span id="currentUV" ></span></p>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <!-- the lower section displays the 5 day forecast for the selected city -->
+                        <h4>Five (5) Day Forecast:</h4>
+                        <div id="day-forecast" class="row justify-content-around text-light m-2">
+                            <div class="col-2 card bg-primary">
+                                <h6 class="card-title">8/25/2020</h6>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temperature: 90.9</p>
+                                <p class="card-text">Humidity: 41%</p>
+                            </div>
+                            <div class="col-2 card bg-primary">
+                                <h6 class="card-title">8/25/2020</h6>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temperature: 90.9</p>
+                                <p class="card-text">Humidity: 41%</p>
+                            </div>
+                            <div class="col-2 card bg-primary">
+                                <h6 class="card-title">8/25/2020</h6>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temperature: 90.9</p>
+                                <p class="card-text">Humidity: 41%</p>
+                            </div>
+                            <div class="col-2 card bg-primary">
+                                <h6 class="card-title">8/25/2020</h6>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temperature: 90.9</p>
+                                <p class="card-text">Humidity: 41%</p>
+                            </div>
+                            <div class="col-2 card bg-primary">
+                                <h6 class="card-title">8/25/2020</h6>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temperature: 90.9</p>
+                                <p class="card-text">Humidity: 41%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
