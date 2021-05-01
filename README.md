@@ -1,3 +1,4 @@
+
 # Horus Weather Dash Version 1.0
 
 1. [ Description. ](#desc)
@@ -9,11 +10,19 @@
 <a name="desc"></a>
 ## Description
 
-The Horus Weather Dash is designed to help you to set your work momentum for the day. It is a responsive app that allows for entering a descriptive task on each hour of your work day. Once you enter a task, it also allows you to add the task into your browser's local storage.  The task areas are designed to disable if the hour is in the past. It is also color-coded to indicate the past, present and future hour. 
+The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. When you enter a city, it will be saved in local storage and you have the ability to retrieve the cities you previously entered. The app displays the following:
+- temperature
+- humidity
+- wind speed
+- UV index
+- weather icon
 
-どれい "dorei" 
-Nihongo | Japanese | Noun 
-English Translation: "slave"
+ ## 𓂀 Eye of Horus 
+
+Egypt | Hieroglyph | Horus 
+The Eye of Horus is a symbol of protection.
+In the Egyptian myth, Horus lost his left eye in a struggle with Seth. 
+The eye was magically restored by Hathor, and this restoration came to symbolize the process of making whole and healing.
 
 <a name="urlz"></a>
 ## Follow The Link:
