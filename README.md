@@ -10,7 +10,12 @@
 <a name="desc"></a>
 ## Description
 
-The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. 
+The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. When you enter a city, it will be saved in local storage and you have the ability to retrieve the cities you previously entered. The app displays the following:
+- temperature
+- humidity
+- wind speed
+- UV index
+- weather icon
 
  ## 𓂀 Eye of Horus 
 
