@@ -1,3 +1,4 @@
+
 # Horus Weather Dash Version 1.0
 
 1. [ Description. ](#desc)
@@ -11,9 +12,13 @@
 
 The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. 
 
-どれい "dorei" 
-Nihongo | Japanese | Noun 
-English Translation: "slave"
+![horus](https://user-images.githubusercontent.com/71202250/116793554-45e16c80-aa7c-11eb-8e63-1171d1f41423.jpg) 
+"Eye of Horus" 
+
+Egypt | Hieroglyph | Horus 
+The Eye of Horus is a symbol of protection.
+In the Egyptian myth, Horus lost his left eye in a struggle with Seth. 
+The eye was magically restored by Hathor, and this restoration came to symbolize the process of making whole and healing.
 
 <a name="urlz"></a>
 ## Follow The Link:
