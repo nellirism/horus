@@ -6,12 +6,14 @@ var buildSearchHistory = function() {
     var searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
     if (searchHistory == null) {
         // if the search history local variable does not exist then generate the left column with common locations
-        searchHistory = ["Orlando","Atlanta","Dallas","Denver","New York","Detroit","Seattle", "Alburqueque"];
+        searchHistory = [];
+
         localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
     }
     var groupContainer = $(".list-group");
     groupContainer.html("");
     for (i in searchHistory) {
+        // console.log(i, searchHistory);
         // generate a list group item for each city in search history
         var buttonEl = $("<button>")
             .addClass("list-group-item list-group-item-action")
@@ -25,17 +27,21 @@ var buildSearchHistory = function() {
 var updateSearchHistory = function(city) {
     var searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
     searchHistory.unshift(city);
-    searchHistory.pop();
+    if (searchHistory > 8) {
+        searchHistory.pop();
+    }
+    // searchHistory.push(city);
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 
+    buildSearchHistory();
     // gather all list items
-    var listItems = $(".list-group-item");
+    // var listItems = $(".list-group-item");
 
-    // Update button text
-    for (l in listItems) {
-        // update text of each item
-        listItems[l].textContent = searchHistory[l];
-    };
+    // // Update button text
+    // for (l in listItems) {
+    //     // update text of each item
+    //     listItems[l].textContent = searchHistory[l];
+    // };
 }
 
 var getIndex = function(response) {
@@ -80,7 +86,7 @@ var updateCurrentWeather = function(response) {
     windSpeedEl.text(currentWindSpeed);
     iconEl.attr("src", "https://openweathermap.org/img/w/" + currentIcon + ".png");
 
-    debugger;
+    
     // print data to screen
     var currentTimeCodeUnix = response.dt;
     var s = new Date(currentTimeCodeUnix*1000).toLocaleDateString("en-US")
@@ -112,10 +118,10 @@ var updateUVIndex = function(val) {
 var getCurrentWeather = function(cityName) {
     
     var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=" + apiKey;
-
     fetch(apiUrl).then(function(response) {
         // only continue if valid city data
-        if (response.ok) {
+        console.log(response);
+        if (response.status === 200) {
             response.json().then(function(response) {
                 var cityContainerEl = $("#currentCity");
                 cityContainerEl.text(cityName);
@@ -125,6 +131,7 @@ var getCurrentWeather = function(cityName) {
                 get5DayForecast(cityName);
                 
                 var apiUrlUV = "https://api.openweathermap.org/data/2.5/uvi?lat=" + location.lat  + "&lon=" + location.long + "&appid=" + apiKey;
+                // console.log(apiUrlUV);
                 return fetch(apiUrlUV);
             }).then(function(response) {
                 response.json().then(function(response) {
@@ -147,23 +154,25 @@ var get5DayForecast = function(cityName) {
     var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&units=imperial&appid=" + apiKey;
 
     fetch(apiUrl).then(function(response) {
+        // console.log(response);
         // dont need if response ok since already checked earlier
         response.json().then(function(response) {
+            // console.log(response);
             // build 
             // variable to hold index of the first date change
             var idx = getIndex(response);
     
-            for (i=0; i<5; i++) {
+            for (i=0; i < response.list.length; i += 8) {
                 // based on the index value above, find the index value for the 5 days (add 4 so the printed data values are for the middle of the day)
-                var actualIdx = i * 8 + idx + 4;
-                if (actualIdx>39) {actualIdx = 39};
+                // var i = i * 8 + idx + 4;
+                if (i > 39) {i = 39};
     
                 // get data from api at Unix and convert
-                var timeCodeUnix = response.list[actualIdx].dt;
+                var timeCodeUnix = response.list[i].dt;
                 var time = new Date(timeCodeUnix*1000).toLocaleDateString("en-US");
-                var icon = response.list[actualIdx].weather[0].icon;
-                var temp = response.list[actualIdx].main.temp;
-                var humidity = response.list[actualIdx].main.humidity;
+                var icon = response.list[i].weather[0].icon;
+                var temp = response.list[i].main.temp;
+                var humidity = response.list[i].main.humidity;
     
                 var cardEl = $("<div>").addClass("col-2 card bg-primary pt-2");
                 var cardTitleEl = $("<h5>").addClass("card-title").text(time);
@@ -206,7 +215,7 @@ var formSubmitHandler = function(event) {
 
 
 buildSearchHistory();
-getCurrentWeather("Orlando");
+// getCurrentWeather("San Jose");
 
 
 $("button").click(formSubmitHandler);
