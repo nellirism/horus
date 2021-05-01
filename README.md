@@ -12,7 +12,7 @@
 
 The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. 
 
-𓂀 "Eye of Horus" 
+ # 𓂀 Eye of Horus 
 
 Egypt | Hieroglyph | Horus 
 The Eye of Horus is a symbol of protection.
