@@ -9,7 +9,7 @@
 <a name="desc"></a>
 ## Description
 
-The Horus Weather Dash is designed to help you to set your work momentum for the day. It is a responsive app that allows for entering a descriptive task on each hour of your work day. Once you enter a task, it also allows you to add the task into your browser's local storage.  The task areas are designed to disable if the hour is in the past. It is also color-coded to indicate the past, present and future hour. 
+The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. 
 
 どれい "dorei" 
 Nihongo | Japanese | Noun 
