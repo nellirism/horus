@@ -28,7 +28,7 @@ The eye was magically restored by Hathor, and this restoration came to symbolize
 <a name="urlz"></a>
 ## Follow The Link:
 
-
+https://nellirism.github.io/horus/
 
 <a name="demo"></a>
 ## Horus Demo
