@@ -20,7 +20,8 @@ The Horus Weather Dash is designed to provide you information on the current wea
 
  ## 𓂀 Eye of Horus 
 
-Egypt | Hieroglyph | Horus 
+Egypt | Hieroglyph | Horus
+
 The Eye of Horus is a symbol of protection.
 In the Egyptian myth, Horus lost his left eye in a struggle with Seth. 
 The eye was magically restored by Hathor, and this restoration came to symbolize the process of making whole and healing.
