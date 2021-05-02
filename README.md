@@ -37,38 +37,34 @@ https://user-images.githubusercontent.com/71202250/115974487-fb0ea480-a511-11eb-
 <a name="story"></a>
 ## User Story
 
-AS A results-oriented worker with a busy schedule
+AS A traveler
 
-I WANT to add important events to a daily planner
+I WANT to see the weather outlook for multiple cities
 
-SO THAT I can manage my time effectively
-
+SO THAT I can plan a trip accordingly
 
 <a name="ac"></a>
 ## Acceptance Criteria
 
-GIVEN I am using a daily planner to create a schedule
+GIVEN a weather dashboard with form inputs
 
-WHEN I open the planner
+WHEN I search for a city
 
-THEN the current day is displayed at the top of the calendar
+THEN I am presented with current and future conditions for that city and that city is added to the search history
 
-WHEN I scroll down
+WHEN I view current weather conditions for that city
 
-THEN I am presented with time blocks for standard business hours
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV 
+index
 
-WHEN I view the time blocks for that day
+WHEN I view the UV index
 
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
+THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
 
-WHEN I click into a time block
+WHEN I view future weather conditions for that city
 
-THEN I can enter an event
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 
-WHEN I click the save button for that time block
+WHEN I click on a city in the search history
 
-THEN the text for that event is saved in local storage
-
-WHEN I refresh the page
-
-THEN the saved events persist
+THEN I am again presented with current and future conditions for that city
