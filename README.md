@@ -3,7 +3,7 @@
 
 1. [ Description. ](#desc)
 2. [ Follow the Link. ](#urlz)
-3. [ iDorei Demo. ](#demo)
+3. [ Horus Demo. ](#demo)
 4. [ User Story. ](#story)
 5. [ Acceptance Criteria. ](#ac)
 
@@ -11,6 +11,7 @@
 ## Description
 
 The Horus Weather Dash is designed to provide you information on the current weather forecast in a given city. The app also provides a full 5 day forecast for the selected city. When you enter a city, it will be saved in local storage and you have the ability to retrieve the cities you previously entered. The app displays the following:
+
 - temperature
 - humidity
 - wind speed
@@ -27,12 +28,12 @@ The eye was magically restored by Hathor, and this restoration came to symbolize
 <a name="urlz"></a>
 ## Follow The Link:
 
-https://nellirism.github.io/iDorei/
+
 
 <a name="demo"></a>
-## iDorei Demo
+## Horus Demo
 
-https://user-images.githubusercontent.com/71202250/115974487-fb0ea480-a511-11eb-814f-a66fc71093cc.mp4
+https://user-images.githubusercontent.com/71202250/116808103-e9b63100-aaeb-11eb-8985-f7bfe4931718.mp4
 
 <a name="story"></a>
 ## User Story
