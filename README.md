@@ -34,7 +34,7 @@ https://nellirism.github.io/horus/
 <a name="demo"></a>
 ## Horus Demo
 
-https://user-images.githubusercontent.com/71202250/116808103-e9b63100-aaeb-11eb-8985-f7bfe4931718.mp4
+https://user-images.githubusercontent.com/71202250/116826667-08e3ab80-ab4a-11eb-98fe-f710150813ae.mp4
 
 <a name="story"></a>
 ## User Story
